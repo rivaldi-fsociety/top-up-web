@@ -13,8 +13,8 @@ function DetailTopUp({props, setPoint, setPrice, setIsError, input}: {props : To
       }
       
       const setPointEvent = () =>{
-        setPoint(props.point)
-        setPrice(props.harga)
+        setPoint(props?.point)
+        setPrice(props?.harga)
       }
     
       const mainFunction = () => {
@@ -32,10 +32,10 @@ function DetailTopUp({props, setPoint, setPrice, setIsError, input}: {props : To
     <>
         <div className="card h-24 w-full bg-gray-700 shadow-xl space-y-2">
             <div className="pt-4 pl-4">
-                <h2 className="font-semibold text-xl">{props.point} Points</h2>
+                <h2 className="font-semibold text-xl">{props?.point} Points</h2>
             </div>
             <div className="pl-4">
-                <h2 className="font-light text-md">Rp. {props.harga}</h2>
+                <h2 className="font-light text-md">Rp. {props?.harga}</h2>
             </div>
             <div className='flex place-content-end absolute pl-52 pt-4'>
                 <button className="btn btn-outline tracking-wider" onClick={mainFunction}>Pilih</button>

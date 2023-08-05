@@ -42,7 +42,7 @@ function DetailGames({props}:{props:GamesProps}) {
                 {/* Left Side */}
                 <div className="card h-fit w-4/12 bg-gray-800 shadow-xl">
                     <div className='flex justify-center items-center'>
-                        <Image src={props.src}
+                        <Image src={props?.src}
                             width="0"
                             height="0"
                             sizes="100vw"
@@ -52,10 +52,10 @@ function DetailGames({props}:{props:GamesProps}) {
                         />
                     </div>
                     <div className="card-body items-center text-center mt-24">
-                        <h2 className="card-title my-4">{props.name}</h2>
+                        <h2 className="card-title my-4">{props?.name}</h2>
                         <div className='min-w-fit space-y-8'>
                             <p className='text-justify'>
-                                {`Top up Points hanya dalam hitungan detik! Cukup masukan Username ${props.name} Anda. pilih jumlah Points yang Anda inginkan, selesaikan pembayaran dan Points akan secara langsung ditambahkan ke akun ${props.name} Anda.`}
+                                {`Top up Points hanya dalam hitungan detik! Cukup masukan Username ${props?.name} Anda. pilih jumlah Points yang Anda inginkan, selesaikan pembayaran dan Points akan secara langsung ditambahkan ke akun ${props?.name} Anda.`}
                             </p>
                             <p className='text-justify'>
                                 {`Bayarlah menggunakan QRIS, GoPay, OVO, DANA, Bank Transfer, Telkomsel, ShopeePay, LinkAja, Alfamart, Indomaret, dan Kartu Kredit. Tanpa perlu registrasi ataupun login.`}
